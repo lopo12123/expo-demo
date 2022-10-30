@@ -7,6 +7,9 @@
         "icon": "./assets/images/icon.png",
         "scheme": "catalystplus",
         "userInterfaceStyle": "automatic",
+        "facebookAutoInitEnabled": false,
+        "facebookAutoLogAppEventsEnabled": false,
+        "facebookAdvertiserIDCollectionEnabled": false,
         "splash": {
             "image": "./assets/images/splash.png",
             "resizeMode": "contain",
@@ -27,7 +30,11 @@
                 "backgroundColor": "#ffffff"
             },
             "package": "cn.catalystplus.mobile",
-            "permissions": []
+            "permissions": [],
+            "blockedPermissions": [
+                "android.permission.READ_ANDROID_ID",
+                "android.permission.READ_PHONE_STATE"
+            ]
         },
         "web": {
             "favicon": "./assets/images/favicon.png"
